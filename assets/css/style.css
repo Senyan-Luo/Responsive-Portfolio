@@ -134,6 +134,16 @@ h3, h2 {
   border: 1px solid #ddd;
 }
 
+.main-chunk {
+  float: left;
+  width: 100%;
+  max-width: 960px;
+  padding: 30px;
+  margin: 0 0 40px;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
 /* portfolio page */
 
 .work {
@@ -215,3 +225,77 @@ input[type=submit] {
   background: #4aaaa5;
   border: 0 none;
 }
+
+@media screen and (max-width: 980px){
+.main-section{
+  width:65%;
+  margin-left: 20px;
+  }
+nav{
+  margin-right: 20px;
+  }
+#logo{
+  margin-left:20px;
+}
+
+.main-chunk {
+  width: 75%;
+  margin-left: 10px;
+}
+
+.work {
+  position: relative;
+  left: 10px;
+  float: left;
+  width: 45%;
+  margin: 20px 0 25px;
+  overflow: auto;
+  margin-right: 25px;
+}
+
+.work:nth-child(even) {
+  margin-right: 10px;
+
+
+}
+@media screen and (max-width: 768px){
+  .auth-image {
+  width:300px;
+  }
+  #logo{
+    margin-left:10px;
+  }
+  .main-section {
+    width: 96%;
+    margin-left: 15px;
+}
+  .main-chunk{
+    width:96%;
+  }
+}
+@media screen and (max-width: 640px){
+  /*make position of header static*/
+  header{
+    position:static;
+  }
+  #logo{
+    width:100%;
+  }
+  nav{
+    text-align: center;
+    margin-right: 40px;
+    width:90%;
+  }
+  .main-section{
+    width:94%;
+  }
+  .auth-image{
+    width:100%;
+  }
+  .main-chunk {
+    width: 96%;
+    margin-left: 10px;
+}
+  .work{
+    width:95%;
+  }
